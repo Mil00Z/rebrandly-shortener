@@ -1,0 +1,56 @@
+:root{
+    --white:255,255,255;
+    --black : 0,0,0;
+    --tomato:#ff6347;
+    --main-theme: 5,5,5;
+    --main-color: 238,238,238;
+    --yellow: #FED550;
+    --green: #25eb8f;
+    --night_blue:  38, 96, 164;
+    --red:255, 35, 109;
+    --orange:238, 91, 53;
+    --redGradient: linear-gradient(90deg,#ff236d,#ee5b35);
+    --redGradientBis: linear-gradient(90deg,rgba(var(--red),1),rgb(238, 91, 53));
+    --blueGreenGradient : linear-gradient(to right, rgba(var(--night_blue),0.98), var(--yellow));
+    --twilight:linear-gradient(-170deg, #2376ae 0%, #c16ecf 100%);
+    --marginSide: 1.25rem;
+  }
+
+  body{
+    height:100vh;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items:center;
+    background:var(--blueGreenGradient);
+    background:var(--redGradient);
+    font-size:100%;
+    font-family:'Ubuntu', sans-serif;
+}
+
+  h1{
+      color:rgb(var(--white));
+      text-shadow: 0 0 2px rgb(var(--black));
+      margin: 3rem 0 5rem ;
+      font-size:3rem;
+      text-transform: uppercase;
+  }
+  .link-title{
+    text-shadow: none;
+    font-weight: bold;
+    color:rgba(var(--night_blue));
+  }
+  .shorten-link{
+    color:rgba(var(--red));
+    font-size:1.6rem;
+    text-align: center;
+  }
+  .result{
+    color:var(--green);
+    font-size:1.2rem;
+  }
+
+  .btn-custom{
+    background:var(--redGradient);
+    color:rgb(var(--white));
+  }

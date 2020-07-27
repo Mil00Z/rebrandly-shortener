@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorten URL</title>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+  
+
+    <h1>Simple Shortener Url by <a href="https://rebrandly.com" class="link-title">Rebrandly</a></h1>
+
+    <div class="w-full max-w-xs">
+
+        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" id="form">
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="title">
+              Titre 
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="title" type="text" placeholder="Super Lien Machin" value="truc" required>
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+              URL
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="url" type="text" placeholder="http://www.myurl.com" required>
+          </div>
+          <div class="mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="result">
+              Url Shorten
+            </label>
+            <div id="result" class="tadaam">
+            </div>
+          </div>
+          <div class="flex items-center justify-center">
+            <button id="getUrl" class="btn-custom py-2 px-4 focus:outline-none focus:shadow-outline rounded" type="submit">
+              Short this URL
+            </button>
+          </div>
+        </form>
+
+      </div>
+
+
+</body>
+    <script type="module" src="./main.js"></script>
+</html>
